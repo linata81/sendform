@@ -9,16 +9,16 @@
       $mail->isSMTP();                                            
       $mail->Host       = 'smtp.mail.ru';
       $mail->SMTPAuth   = true;                                  
-      $mail->Username   = 'batarei2ka@mail.ru';                   
-      $mail->Password   = 'Wv63XcPqzyYDzGenXMdb';
+      $mail->Username   = 'ящик@mail.ru';                   
+      $mail->Password   = 'секретный пароль с mail почты для сторонних программ';
       $mail->SMTPSecure = 'ssl';         
       $mail->Port       = 465;
       $mail->SMTPOptions = [ 'ssl' => [ 'verify_peer' => false, 'verify_peer_name' => false, 'allow_self_signed' => true, ] ];
       $mail->CharSet = 'UTF-8';
 
-      $mail->From = 'batarei2ka@mail.ru';
+      $mail->From = 'куда@mail.ru';
       $mail->FromName = 'admin';
-      $mail->addAddress('batarei2ka@mail.ru');
+      $mail->addAddress('куда@mail.ru');
 
       //Content
       $mail->isHTML(true);                                  
